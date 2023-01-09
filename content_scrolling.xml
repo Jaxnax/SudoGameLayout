@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GameSetting"
+    tools:showIn="@layout/activity_game_setting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/scroll_view_margin_vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/scroll_linear_layout_margin_start">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Game Statistics"
+                    android:background="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Games Played:"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Games Won:"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Games Drawn:"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_stats_margin_left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_total_games_played"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/text_total_games_won"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+
+                        <TextView
+                            android:id="@+id/text_total_games_drawn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:background="@color/white"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/complete_statistics_button"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="Full Game Stats"
+                    android:textSize="10sp"
+                    android:background="@color/button_subscribe" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Game Settings"
+                    android:background="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Note that if there's a game in progress then changes would only take effect at the next game"
+                    android:background="@color/white"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+                android:layout_marginEnd="@dimen/scroll_linear_layout_margin_start"
+                android:foreground="@color/black"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+                android:layout_marginStart="@dimen/scroll_linear_layout_margin_start">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="SUBSCRIPTION"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:text="Subscribe to remove adds and activate features like multiple undo,play with human mode, access to 9 by 9 SudoGame Grid and so on"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/scroll_linear_layout_margin_start">
+                <Button
+                    android:id="@+id/subscribe_button"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="Subscribe"
+                    android:textSize="10sp"
+                    android:background="@color/button_subscribe" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/scroll_view_margin_vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="GAME MODE"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:text="Choose either to play with computer or human. Playing with human requires subscription"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/scroll_view_layout_right_width"
+                android:layout_height="@dimen/scroll_view_layout_right_height"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/scroll_linear_layout_margin_start">
+
+                <RadioGroup
+                    android:id="@+id/game_mode_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/player_vs_computer_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Player vs Computer"
+                        android:textSize="10sp" />
+
+                    <RadioButton
+                        android:id="@+id/player_vs_player_radio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Player vs Player" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+            android:layout_marginTop="@dimen/scroll_view_margin_vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="GAME THEME"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:text="Choose preferred theme for the game"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="@dimen/scroll_view_layout_right_width"
+                android:layout_height="@dimen/scroll_view_layout_right_height"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/scroll_linear_layout_margin_start">
+
+
+                <RadioGroup
+                    android:id="@+id/game_theme_radio_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/white_mode_theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="White Mode Theme"
+                        android:textSize="10sp"/>
+
+                    <RadioButton
+                        android:id="@+id/dark_mode_theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="Dark Mode Theme" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+            android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+            android:layout_marginEnd="@dimen/scroll_linear_layout_margin_start"
+            android:foreground="@color/black"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+            android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+            android:layout_marginEnd="@dimen/scroll_linear_layout_margin_start">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GRID"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/grid_type_announcer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grid_announcer_string"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+                android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                android:layout_marginEnd="@dimen/scroll_linear_layout_margin_start">
+
+                <RadioGroup
+                    android:id="@+id/grid_type_radio_group"
+                    android:layout_width="250dp"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/seven_by_seven_radio_button"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:background="@color/purple_200"/>
+                    <RadioButton
+                        android:id="@+id/eight_by_eight_radio_button"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                        android:background="@color/purple_200"/>
+                    <RadioButton
+                        android:id="@+id/nine_by_nine_radio_button"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                        android:background="@color/purple_200"/>
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scroll_view_layout_left_height"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+            android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+            android:layout_marginEnd="@dimen/scroll_linear_layout_margin_start">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DIFFICULTY LEVEL"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/difficulty_level_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note that you might have to play for a while or subscribe to unlock a higher difficulty level"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:id="@+id/landing_page_game_mode_container"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/progress_horizontal"
+                android:layout_marginTop="@dimen/landing_page_margin_top"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/back_selection_button"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@color/white"
+                        android:src="?attr/actionModeCloseDrawable" />
+
+                    <TextView
+                        android:id="@+id/game_mode_text_view"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:text="Easy"
+                        android:textColor="@color/purple_700"
+                        android:textSize="15sp" />
+
+                    <ImageButton
+                        android:id="@+id/next_selection_button"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:src="?attr/actionModeCloseDrawable" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scroll_view_layout_left_height"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+            android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+            android:layout_marginEnd="@dimen/scroll_linear_layout_margin_start">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GAME PROGRESS"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/setting_view_game_progress_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_progress"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+
+            <ProgressBar
+                android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+                android:id="@+id/progress_bar"
+                style="@android:style/Widget.Material.ProgressBar.Horizontal"
+                android:layout_marginRight="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_700" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+            android:layout_marginEnd="@dimen/scroll_linear_layout_margin_start"
+            android:layout_marginTop="20dp"
+            android:foreground="@color/black">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Piece's Color"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player One"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:foreground="@color/purple_200"/>
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                    android:foreground="@color/purple_200"/>
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                    android:foreground="@color/purple_200"/>
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                    android:foreground="@color/purple_200"/>
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                    android:foreground="@color/purple_200"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player One"
+                android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:foreground="@color/purple_200"/>
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                    android:foreground="@color/purple_200"/>
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                    android:foreground="@color/purple_200"/>
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                    android:foreground="@color/purple_200"/>
+
+                <ImageButton
+                    android:layout_width="@dimen/choose_piece_color_image_width"
+                    android:layout_height="@dimen/choose_piece_color_image_height"
+                    android:layout_marginStart="@dimen/scroll_linear_layout_margin_start"
+                    android:foreground="@color/purple_200"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

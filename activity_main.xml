@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.SudoGame.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.SudoGame.PopupOverlay" />
+
+            <TextView
+                android:id="@+id/toolbar_text_sudo_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="SudoGame"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+
+        <LinearLayout
+            android:id="@+id/landing_page_grid_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="@dimen/landing_page_margin_top"
+            android:layout_marginRight="35dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/seven_by_seven_button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/sudo_pic_7_by_7" />
+
+                <ImageButton
+                    android:id="@+id/eight_by_eight_button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/sudo_pic_8_by_8" />
+
+                <ImageButton
+                    android:id="@+id/nine_by_nine_button"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/sudo_pic_9_by_9" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/landing_page_grid_linearlayout_text"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/landing_page_grid_linearlayout"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:text="    7 by 7"
+                    android:textColor="@color/purple_700"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:text="    8 by 8"
+                    android:textColor="@color/purple_700"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="    9 by 9"
+                    android:textColor="@color/purple_700"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/grid_progress_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grid Progress"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="120dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:layout_below="@id/landing_page_grid_linearlayout_text"
+            android:gravity="center_horizontal"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.Material.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grid_progress_text"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:background="@color/purple_700" />
+
+        <LinearLayout
+            android:id="@+id/landing_page_game_mode_container"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/progress_bar"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="@dimen/landing_page_margin_top"
+            android:layout_marginRight="70dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/back_selection_button"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@color/white"
+                    android:src="?attr/actionModeCloseDrawable" />
+
+                <TextView
+                    android:id="@+id/game_mode_text_view"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:text="Easy"
+                    android:textColor="@color/purple_700"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/next_selection_button"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/white"
+                    android:src="?attr/actionModeCloseDrawable" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/new_game_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/landing_page_game_mode_container"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="@dimen/landing_page_margin_top"
+            android:layout_marginRight="35dp"
+            android:background="@color/purple_200"
+            android:text="@string/new_game"
+            android:textColor="@color/landing_page_text_color" />
+
+        <Button
+            android:id="@+id/load_existing_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/new_game_button"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="@dimen/landing_page_margin_top"
+            android:layout_marginRight="35dp"
+            android:background="@color/purple_200"
+            android:text="Load Existing Game"
+            android:textColor="@color/landing_page_text_color" />
+
+        <Button
+            android:id="@+id/go_to_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/load_existing_game"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="@dimen/landing_page_margin_top"
+            android:layout_marginRight="35dp"
+            android:background="@color/purple_200"
+            android:text="Menu"
+            android:textColor="@color/landing_page_text_color" />
+
+        <Button
+            android:id="@+id/how_to_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/go_to_menu"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="@dimen/landing_page_margin_top"
+            android:layout_marginRight="35dp"
+            android:background="@color/purple_200"
+            android:text="How To Play"
+            android:textColor="@color/landing_page_text_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/purple_200">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

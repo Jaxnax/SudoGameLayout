@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnotherAnotherAct">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.SudoGame.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Theme.SudoGame.PopupOverlay" />
+
+            <ImageButton
+                android:id="@+id/menu_setting_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="#05FFFFFF"
+                android:src="@android:drawable/ic_menu_share" />
+
+            <ImageButton
+                android:id="@+id/change_settings_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@id/menu_setting_button"
+                android:background="#02FFFFFF"
+                app:srcCompat="@android:drawable/ic_menu_set_as" />
+
+            <ImageButton
+                android:id="@+id/button_go_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:background="#00FFFFFF"
+                app:srcCompat="@android:drawable/ic_menu_revert" />
+
+            <ImageButton
+                android:id="@+id/button_has_questions"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:layout_toLeftOf="@id/change_settings_button"
+                android:background="#03FFFFFF"
+                app:srcCompat="@android:drawable/ic_menu_help" />
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/gere"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color"
+            android:foreground="@color/box_color"
+
+            />
+
+        <TextView
+            android:id="@+id/box_text0"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_0"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+
+
+        <ImageView
+            android:layout_width="@dimen/piece_container_width"
+            android:layout_height="@dimen/piece_container_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pipipi"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/gereme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color"
+            android:foreground="@color/box_color"
+
+            />
+
+        <TextView
+            android:id="@+id/box_text1"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="-4"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mipipi"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/geremep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color"
+            android:foreground="@color/box_color"
+
+            />
+
+        <TextView
+            android:id="@+id/box_text01"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="-4"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="300dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBarLayout" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="300dp"
+        android:text="Button"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/racket_layout"
+        android:layout_width="297dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        android:background="@color/racket_background_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

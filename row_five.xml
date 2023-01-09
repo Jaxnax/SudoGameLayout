@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/board_width"
+    android:layout_height="@dimen/box_layout_height"
+    android:background="@color/layout_box_color"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout_box36"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height">
+
+        <ImageButton
+            android:id="@+id/layout_box_button36"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color" />
+
+        <TextView
+            android:id="@+id/box_text36"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_36"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_box37"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height">
+
+        <ImageButton
+            android:id="@+id/layout_box_button37"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color"/>
+
+        <TextView
+            android:id="@+id/box_text37"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_37"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_box38"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height">
+
+        <ImageButton
+            android:id="@+id/layout_box_button38"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color" />
+
+        <TextView
+            android:id="@+id/box_text38"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_38"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_box39"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height">
+
+        <ImageButton
+            android:id="@+id/layout_box_button39"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color"/>
+
+        <TextView
+            android:id="@+id/box_text39"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_39"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_box40"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height">
+
+        <ImageButton
+            android:id="@+id/layout_box_button40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color" />
+
+        <TextView
+            android:id="@+id/box_text40"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_40"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_box41"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height">
+
+        <ImageButton
+            android:id="@+id/layout_box_button41"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color" />
+
+        <TextView
+            android:id="@+id/box_text41"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_41"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_box42"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height">
+
+        <ImageButton
+            android:id="@+id/layout_box_button42"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color" />
+
+        <TextView
+            android:id="@+id/box_text42"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_42"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_box43"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height">
+
+        <ImageButton
+            android:id="@+id/layout_box_button43"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color" />
+
+        <TextView
+            android:id="@+id/box_text43"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_43"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_box44"
+        android:layout_width="@dimen/box_width"
+        android:layout_height="@dimen/box_height">
+
+        <ImageButton
+            android:id="@+id/layout_box_button44"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:background="@color/box_color" />
+
+        <TextView
+            android:id="@+id/box_text44"
+            android:layout_width="@dimen/text_linear_layoutWidth"
+            android:layout_height="@dimen/text_linear_layoutHeight"
+            android:layout_marginLeft="@dimen/sudoDigit_layout_marginLeft"
+            android:layout_marginTop="@dimen/sudoDigit_layout_marginTop"
+            android:layout_weight="@dimen/sudo_digit_weight"
+            android:text="@string/box_44"
+            android:textColor="@color/sudoDigit_color"
+            android:textSize="@dimen/sudoDigitSize" />
+    </RelativeLayout>
+</LinearLayout>
