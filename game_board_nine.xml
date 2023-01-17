@@ -166,13 +166,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/board_stroke_shape"
+        android:gravity="center_horizontal"
         app:layout_constraintTop_toBottomOf="@id/layout_games_played">
 
         <LinearLayout
             android:id="@+id/layout_racket_one"
             android:layout_width="@dimen/board_width"
             android:layout_height="@dimen/racket_height"
-            android:background="@color/racket_background_color"
+            android:background="@drawable/racket_stroke_shape"
             android:orientation="horizontal">
         </LinearLayout>
 
@@ -190,7 +192,7 @@
             android:id="@+id/layout_racket_two"
             android:layout_width="@dimen/board_width"
             android:layout_height="@dimen/racket_height"
-            android:background="@color/racket_background_color"
+            android:background="@drawable/racket_stroke_shape"
             android:orientation="horizontal">
 
         </LinearLayout>

@@ -440,12 +440,19 @@
 
             <ProgressBar
                 android:layout_marginTop="@dimen/scroll_view_margin_vertical"
+                style="@android:style/Widget.ProgressBar.Horizontal"
                 android:id="@+id/progress_bar"
-                style="@android:style/Widget.Material.ProgressBar.Horizontal"
                 android:layout_marginRight="100dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/purple_700" />
+                android:layout_below="@id/progress_text_container"
+                android:background="@drawable/custom_progress"
+                android:max="100"
+                android:padding="2dp"
+                android:progress="30"
+                android:progressBackgroundTint="@color/purple_700"
+                android:progressTint="@color/progress_tint"
+                android:progressTintMode="multiply"/>
 
         </LinearLayout>
 

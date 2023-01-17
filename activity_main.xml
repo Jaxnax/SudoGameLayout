@@ -69,6 +69,8 @@
                     android:id="@+id/eight_by_eight_button"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_centerInParent="true"
                     android:src="@mipmap/sudo_pic_8_by_8" />
 
@@ -120,29 +122,41 @@
                     android:textSize="13sp" />
             </RelativeLayout>
         </LinearLayout>
-        <TextView
-            android:id="@+id/grid_progress_text"
+        <LinearLayout
+            android:id="@+id/progress_text_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Grid Progress"
-            android:layout_marginLeft="120dp"
+            android:layout_marginLeft="70dp"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="120dp"
-            android:textColor="@color/black"
-            android:background="@color/white"
             android:layout_below="@id/landing_page_grid_linearlayout_text"
-            android:gravity="center_horizontal"/>
+            android:layout_marginRight="70dp">
+            <TextView
+                android:id="@+id/grid_progress_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Grid Progress"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
 
         <ProgressBar
             android:id="@+id/progress_bar"
-            style="@android:style/Widget.Material.ProgressBar.Horizontal"
+            style="@android:style/Widget.ProgressBar.Horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/grid_progress_text"
-            android:layout_marginLeft="80dp"
+            android:layout_below="@id/progress_text_container"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="80dp"
-            android:background="@color/purple_700" />
+            android:layout_marginRight="40dp"
+            android:background="@drawable/custom_progress"
+            android:max="100"
+            android:padding="2dp"
+            android:progress="30"
+            android:progressBackgroundTint="@color/purple_700"
+            android:progressTint="@color/progress_tint"
+            android:progressTintMode="multiply" />
 
         <LinearLayout
             android:id="@+id/landing_page_game_mode_container"
@@ -195,7 +209,7 @@
             android:layout_marginLeft="35dp"
             android:layout_marginTop="@dimen/landing_page_margin_top"
             android:layout_marginRight="35dp"
-            android:background="@color/purple_200"
+            android:background="@drawable/main_activity_click_selector"
             android:text="@string/new_game"
             android:textColor="@color/landing_page_text_color" />
 
@@ -207,7 +221,7 @@
             android:layout_marginLeft="35dp"
             android:layout_marginTop="@dimen/landing_page_margin_top"
             android:layout_marginRight="35dp"
-            android:background="@color/purple_200"
+            android:background="@drawable/main_activity_click_selector"
             android:text="Load Existing Game"
             android:textColor="@color/landing_page_text_color" />
 
@@ -219,7 +233,7 @@
             android:layout_marginLeft="35dp"
             android:layout_marginTop="@dimen/landing_page_margin_top"
             android:layout_marginRight="35dp"
-            android:background="@color/purple_200"
+            android:background="@drawable/main_activity_click_selector"
             android:text="Menu"
             android:textColor="@color/landing_page_text_color" />
 
@@ -231,7 +245,7 @@
             android:layout_marginLeft="35dp"
             android:layout_marginTop="@dimen/landing_page_margin_top"
             android:layout_marginRight="35dp"
-            android:background="@color/purple_200"
+            android:background="@drawable/main_activity_click_selector"
             android:text="How To Play"
             android:textColor="@color/landing_page_text_color" />
 
@@ -239,7 +253,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_alignParentBottom="true"
-            android:background="@color/purple_200">
+            android:background="@color/purple_700">
 
         </LinearLayout>
     </RelativeLayout>

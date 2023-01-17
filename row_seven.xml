@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="@dimen/board_width"
+    android:layout_width="wrap_content"
     android:layout_height="@dimen/box_layout_height"
-    android:background="@color/layout_box_color"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_centerInParent="true">
 
     <RelativeLayout
-        android:id="@+id/layout_box54"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height">
 
@@ -15,11 +14,7 @@
             android:id="@+id/layout_box_button54"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:background="@color/box_color" />
+            android:background="@drawable/box_background_shape" />
 
         <TextView
             android:id="@+id/box_text54"
@@ -31,10 +26,20 @@
             android:text="@string/box_54"
             android:textColor="@color/sudoDigit_color"
             android:textSize="@dimen/sudoDigitSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_box54"
+            android:layout_width="@dimen/container9_layout_width"
+            android:layout_height="@dimen/container9_layout_height"
+            android:layout_marginLeft="@dimen/container9_layout_marginleft"
+            android:layout_marginTop="@dimen/container9_layout_margintop"
+            android:layout_marginRight="@dimen/container9_layout_marginright"
+            android:layout_marginBottom="@dimen/container9_layout_marginbottom">
+
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_box55"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height">
 
@@ -42,11 +47,7 @@
             android:id="@+id/layout_box_button55"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:background="@color/box_color" />
+            android:background="@drawable/box_background_shape" />
 
         <TextView
             android:id="@+id/box_text55"
@@ -58,10 +59,20 @@
             android:text="@string/box_55"
             android:textColor="@color/sudoDigit_color"
             android:textSize="@dimen/sudoDigitSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_box55"
+            android:layout_width="@dimen/container9_layout_width"
+            android:layout_height="@dimen/container9_layout_height"
+            android:layout_marginLeft="@dimen/container9_layout_marginleft"
+            android:layout_marginTop="@dimen/container9_layout_margintop"
+            android:layout_marginRight="@dimen/container9_layout_marginright"
+            android:layout_marginBottom="@dimen/container9_layout_marginbottom">
+
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_box56"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height">
 
@@ -69,11 +80,7 @@
             android:id="@+id/layout_box_button56"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:background="@color/box_color" />
+            android:background="@drawable/box_background_shape" />
 
         <TextView
             android:id="@+id/box_text56"
@@ -85,10 +92,20 @@
             android:text="@string/box_56"
             android:textColor="@color/sudoDigit_color"
             android:textSize="@dimen/sudoDigitSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_box56"
+            android:layout_width="@dimen/container9_layout_width"
+            android:layout_height="@dimen/container9_layout_height"
+            android:layout_marginLeft="@dimen/container9_layout_marginleft"
+            android:layout_marginTop="@dimen/container9_layout_margintop"
+            android:layout_marginRight="@dimen/container9_layout_marginright"
+            android:layout_marginBottom="@dimen/container9_layout_marginbottom">
+
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_box57"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height">
 
@@ -96,11 +113,7 @@
             android:id="@+id/layout_box_button57"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:background="@color/box_color" />
+            android:background="@drawable/box_background_shape" />
 
         <TextView
             android:id="@+id/box_text57"
@@ -112,10 +125,20 @@
             android:text="@string/box_57"
             android:textColor="@color/sudoDigit_color"
             android:textSize="@dimen/sudoDigitSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_box57"
+            android:layout_width="@dimen/container9_layout_width"
+            android:layout_height="@dimen/container9_layout_height"
+            android:layout_marginLeft="@dimen/container9_layout_marginleft"
+            android:layout_marginTop="@dimen/container9_layout_margintop"
+            android:layout_marginRight="@dimen/container9_layout_marginright"
+            android:layout_marginBottom="@dimen/container9_layout_marginbottom">
+
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_box58"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height">
 
@@ -123,11 +146,7 @@
             android:id="@+id/layout_box_button58"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:background="@color/box_color" />
+            android:background="@drawable/box_background_shape" />
 
         <TextView
             android:id="@+id/box_text58"
@@ -139,10 +158,20 @@
             android:text="@string/box_58"
             android:textColor="@color/sudoDigit_color"
             android:textSize="@dimen/sudoDigitSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_box58"
+            android:layout_width="@dimen/container9_layout_width"
+            android:layout_height="@dimen/container9_layout_height"
+            android:layout_marginLeft="@dimen/container9_layout_marginleft"
+            android:layout_marginTop="@dimen/container9_layout_margintop"
+            android:layout_marginRight="@dimen/container9_layout_marginright"
+            android:layout_marginBottom="@dimen/container9_layout_marginbottom">
+
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_box59"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height">
 
@@ -150,11 +179,7 @@
             android:id="@+id/layout_box_button59"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:background="@color/box_color" />
+            android:background="@drawable/box_background_shape" />
 
         <TextView
             android:id="@+id/box_text59"
@@ -166,10 +191,20 @@
             android:text="@string/box_59"
             android:textColor="@color/sudoDigit_color"
             android:textSize="@dimen/sudoDigitSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_box59"
+            android:layout_width="@dimen/container9_layout_width"
+            android:layout_height="@dimen/container9_layout_height"
+            android:layout_marginLeft="@dimen/container9_layout_marginleft"
+            android:layout_marginTop="@dimen/container9_layout_margintop"
+            android:layout_marginRight="@dimen/container9_layout_marginright"
+            android:layout_marginBottom="@dimen/container9_layout_marginbottom">
+
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_box60"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height">
 
@@ -177,11 +212,7 @@
             android:id="@+id/layout_box_button60"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:background="@color/box_color" />
+            android:background="@drawable/box_background_shape" />
 
         <TextView
             android:id="@+id/box_text60"
@@ -193,10 +224,20 @@
             android:text="@string/box_60"
             android:textColor="@color/sudoDigit_color"
             android:textSize="@dimen/sudoDigitSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_box60"
+            android:layout_width="@dimen/container9_layout_width"
+            android:layout_height="@dimen/container9_layout_height"
+            android:layout_marginLeft="@dimen/container9_layout_marginleft"
+            android:layout_marginTop="@dimen/container9_layout_margintop"
+            android:layout_marginRight="@dimen/container9_layout_marginright"
+            android:layout_marginBottom="@dimen/container9_layout_marginbottom">
+
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_box61"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height">
 
@@ -204,11 +245,7 @@
             android:id="@+id/layout_box_button61"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:background="@color/box_color" />
+            android:background="@drawable/box_background_shape" />
 
         <TextView
             android:id="@+id/box_text61"
@@ -220,10 +257,20 @@
             android:text="@string/box_61"
             android:textColor="@color/sudoDigit_color"
             android:textSize="@dimen/sudoDigitSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_box61"
+            android:layout_width="@dimen/container9_layout_width"
+            android:layout_height="@dimen/container9_layout_height"
+            android:layout_marginLeft="@dimen/container9_layout_marginleft"
+            android:layout_marginTop="@dimen/container9_layout_margintop"
+            android:layout_marginRight="@dimen/container9_layout_marginright"
+            android:layout_marginBottom="@dimen/container9_layout_marginbottom">
+
+        </RelativeLayout>
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/layout_box62"
         android:layout_width="@dimen/box_width"
         android:layout_height="@dimen/box_height">
 
@@ -231,11 +278,7 @@
             android:id="@+id/layout_box_button62"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_margin_left"
-            android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_marginRight="@dimen/layout_margin_right"
-            android:layout_marginBottom="@dimen/layout_margin_bottom"
-            android:background="@color/box_color" />
+            android:background="@drawable/box_background_shape" />
 
         <TextView
             android:id="@+id/box_text62"
@@ -247,5 +290,16 @@
             android:text="@string/box_62"
             android:textColor="@color/sudoDigit_color"
             android:textSize="@dimen/sudoDigitSize" />
+
+        <RelativeLayout
+            android:id="@+id/layout_box62"
+            android:layout_width="@dimen/container9_layout_width"
+            android:layout_height="@dimen/container9_layout_height"
+            android:layout_marginLeft="@dimen/container9_layout_marginleft"
+            android:layout_marginTop="@dimen/container9_layout_margintop"
+            android:layout_marginRight="@dimen/container9_layout_marginright"
+            android:layout_marginBottom="@dimen/container9_layout_marginbottom">
+
+        </RelativeLayout>
     </RelativeLayout>
 </LinearLayout>
